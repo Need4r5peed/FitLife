@@ -35,8 +35,7 @@ def water_needed_calculation(weight_kg):
     """Вычисляет норму воды по весу в кг и норме в 30 мл на кг.
     Возвращает: float — значение нормы в литрах.
     """
-    water_needed_l = (weight_kg * 30) / 1000
-    return water_needed_l
+    return (weight_kg * 30) / 1000
 
 
 bmi_result = calculate_bmi(user_weight, user_height)
