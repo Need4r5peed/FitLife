@@ -1,5 +1,6 @@
 # Проект FitLife - MVP версия 1.0
 import sys
+
 sys.stdout.reconfigure(encoding='utf-8')
 
 # 1. Знакомство
@@ -26,8 +27,7 @@ def calculate_bmi(weight_kg, height_m):
     """Вычисляет индекс массы тела (BMI) по весу в кг и росту в метрах.
     Возвращает: float — значение BMI.
     """
-    bmi = round(weight_kg / (height_m ** 2), 1)
-    return bmi
+    return round(weight_kg / (height_m ** 2), 1)
 
 
 # TODO: Рассчитай water_needed
