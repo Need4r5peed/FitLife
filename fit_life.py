@@ -22,13 +22,18 @@ while True:
 # 2. Сбор данных
 while True:
     try:
-        user_weight = float(input('Введите ваш вес(в кг) сюда: '))
+        user_weight = float(
+            input('Введите ваш вес (в кг) сюда: ')
+            .replace(',', '.'))
         break
     except ValueError:
         print('Возможно, вы ввели не число. Попробуйте ещё раз.')
+
 while True:
     try:
-        user_height = float(input('Введите ваш рост(в метрах) сюда: '))
+        user_height = float(
+            input('Введите ваш рост(в метрах) сюда: ')
+            .replace(',', '.'))
         break
     except ValueError:
         print('Возможно, вы ввели не число. Попробуйте ещё раз.')
